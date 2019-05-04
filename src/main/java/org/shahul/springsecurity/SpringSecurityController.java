@@ -30,5 +30,10 @@ public class SpringSecurityController
 		return "admin";
 	}
 	
+	@GetMapping("/access-denied")
+	public String accessDenied() {
+		return "accessDenied";
+	}
+	
 
 }

@@ -10,27 +10,15 @@
 <title>Sample Spring Security</title>
 </head>
 <body>
-<h2>Spring Security Demo using Maven</h2>
+<h2>Access Denied. You are not authorized to access This page</h2>
 
 <br>
 <h1>Welcome</h1><security:authentication property="principal.username"/>
 <br>
 <h1>Role : </h1><security:authentication property="principal.authorities"/>
 
-        <form:form action="${pageContext.request.contextPath}/logout" method="POST">
-        	<input type="submit" value="Logout" />
-        </form:form>
 
 
-<security:authorize  access="hasRole('MANAGER')">
-<a href="${pageContext.request.contextPath}/leaders">Manager</a>
-</security:authorize>
-
-<br>
-<div></div>
-<security:authorize  access="hasRole('ADMIN')">
-<a href="${pageContext.request.contextPath}/admin">Admin</a>
-</security:authorize>
-
+<a href="${pageContext.request.contextPath}/employees">Home</a>
 </body>
 </html>
