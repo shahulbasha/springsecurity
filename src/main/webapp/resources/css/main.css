@@ -1,0 +1,92 @@
+body {
+  background: url("/resources/img/background.jpg");
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: relative;
+  width:100%;
+  font-family: "Lato";
+  z-index: -5;
+}
+
+.wrapper {
+  height: 50vh;
+  width: 400px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 50px #000;
+  top: 50%;
+  left: 50%;
+  padding: 60px 30px;
+  position: absolute;
+  color: white;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.form-wrapper input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.text {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  opacity: 1;
+  color: #fff;
+}
+
+.submit {
+  border: none;
+  height: 40px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  background: #ff1234;
+}
+
+.icons {
+  display: flex;
+}
+
+i {
+  padding: 3px;
+  float: initial;
+  text-align: center;
+}
+
+.icons :nth-child(1) {
+  color: aqua;
+}
+
+.icons :nth-child(2) {
+  color: darkolivegreen;
+}
+
+.icons :nth-child(3) {
+  color: rgb(18, 68, 206);
+}
+
+.icons :nth-child(4) {
+  color: #fff;
+}
+
+.overlay {
+  filter: blur(8px);
+}

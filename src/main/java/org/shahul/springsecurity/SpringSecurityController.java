@@ -7,9 +7,28 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SpringSecurityController 
 {
-	@GetMapping("/")
+	
+	
+	  @GetMapping("/") 
+	  public String landing() {
+		  return "landing"; 
+	}
+	 
+	
+	@GetMapping("/employees")
 	public String home() {
 		return "home";
 	}
 	
+	@GetMapping("/leaders")
+	public String manager() {
+		return "leaders";
+	}
+	
+	@GetMapping("/admin")
+	public String admin() {
+		return "admin";
+	}
+	
+
 }

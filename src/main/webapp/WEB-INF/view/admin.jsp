@@ -10,7 +10,7 @@
 <title>Sample Spring Security</title>
 </head>
 <body>
-<h2>Spring Security Demo using Maven</h2>
+<h2>Hey Mate this is an Admin only Page!! Welcome</h2>
 
 <br>
 <h1>Welcome</h1><security:authentication property="principal.username"/>
@@ -21,10 +21,6 @@
         	<input type="submit" value="Logout" />
         </form:form>
 
-<a href="${pageContext.request.contextPath}/leaders">Manager</a>
-<br>
-<div></div>
-<a href="${pageContext.request.contextPath}/admin">Admin</a>
-
+<a href="${pageContext.request.contextPath}/employees">Home</a>
 </body>
 </html>
