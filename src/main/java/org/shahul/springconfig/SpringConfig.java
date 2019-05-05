@@ -47,9 +47,9 @@ public class SpringConfig {
 			dataSource.setDriverClass(env.getProperty("jdbc.driver"));
 			logger.info("url"+env.getProperty("jdbc.url"));
 			logger.info("url"+env.getProperty("jdbc.user"));
-			dataSource.setJdbcUrl("jdbc.url");
-			dataSource.setUser("jdbc.user");
-			dataSource.setPassword("jdbc.password");
+			dataSource.setJdbcUrl(env.getProperty("jdbc.url"));
+			dataSource.setUser(env.getProperty("jdbc.user"));
+			dataSource.setPassword(env.getProperty("jdbc.password"));
 			
 			
 			dataSource.setInitialPoolSize(Integer.parseInt(env.getProperty("connection.pool.initialPoolSize")));
